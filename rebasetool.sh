@@ -10,7 +10,7 @@ then
     read -p "commit message: " message
     git commit -m "$message"
     read -p "checkout branch: " branch
-    git pull --rebase upstream $branch
+    git pull origin $branch
     git push origin $branch
   else
     echo "It's not pushed"
