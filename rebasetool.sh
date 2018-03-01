@@ -22,7 +22,8 @@ else
   read -p "Modified to complete. [y/n]: " variable
   if [ $variable == "y" ]
   then
-    git push origin master -f
+    read -p "checkout branch: " branch
+    git push origin $branch -f
   else
     echo "It's not rebased"
   fi
