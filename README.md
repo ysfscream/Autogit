@@ -6,7 +6,10 @@ Git simplifies the git rebase -i HEAD~$num -> vi -> git push -f process.
 
 # Usage
 
-```shell
-chmod u+x rebasetool.sh
+- Copy the `autogit.sh` to you want to git where the root directory of project.
+- Open a terminal
 
-./rebasetool.sh
+```shell
+$ chmod u+x autogit.sh
+
+$ ./autogit.sh
